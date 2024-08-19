@@ -1,0 +1,15 @@
+version: "3.9"
+
+networks:
+  task-controller:
+    driver: bridge
+
+services:
+  back:
+    build: .
+    ports:
+      - "5000:5000"
+    networks:
+      - task-controller
+    volumes:
+      - ./src:/app/src
