@@ -15,9 +15,12 @@ class TaskManager:
         print("Tarefa adicionada com sucesso!")
 
     def list_tasks(self):
-        for idx, task in enumerate(self.tasks, start=1):
-            status = "Concluída" if task.completed else "Pendente"
-            print(f"{idx}. {task.title} - {status}")
+        if not self.tasks:
+            print("Nenhuma tarefa cadastrada.")
+        else:
+            for idx, task in enumerate(self.tasks, start=1):
+                status = "Concluída" if task.completed else "Pendente"
+                print(f"{idx}. {task.title} - {status}")
 
     def list_incomplete_tasks(self):
         incomplete_tasks = [(idx, task) for idx, task in enumerate(self.tasks) if not task.completed]
