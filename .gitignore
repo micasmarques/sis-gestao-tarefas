@@ -1,0 +1,39 @@
+# Ignorar arquivos de ambiente do Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.pyd
+*.pyo
+
+# Ignorar arquivos de configuração do ambiente virtual
+venv/
+env/
+ENV/
+
+# Ignorar arquivos de configuração do Docker
+docker-compose.override.yml
+
+# Ignorar arquivos de configuração do sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar arquivos de log
+*.log
+
+# Ignorar arquivos temporários
+*.tmp
+*.swp
+
+# Ignorar arquivos gerados
+*.db
+*.sqlite3
+*.sqlite
+
+# Ignorar arquivos do IDE
+.idea/
+.vscode/
+
+# Ignorar arquivos de cobertura de testes
+.coverage
+*.cover
