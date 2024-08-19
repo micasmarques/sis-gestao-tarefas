@@ -38,8 +38,9 @@ Para construir e iniciar o contêiner, use o comando:
 ```bash
 docker-compose up
 ```
+Este comando irá construir a imagem do Docker.
 
-Este comando irá construir a imagem do Docker se necessário e iniciar o serviço definido no arquivo docker-compose.yml.
+Por questões que no projeto estou usando o CLI, esse comando mostra um erro de EOF, e por isso para executar o aplicativo, é preciso executar o comando abaixo.
 
 ### 3. Executar o Aplicativo
 Para executar o aplicativo diretamente no contêiner, use:
